@@ -14,7 +14,7 @@ dotenv.config();
         const entry = {
           ...row,
           cover: {
-            src: `/covers/${row.coverFilename}.webp`,
+            src: `${process.env.PUBLIC_API_IMAGE_PATH.replace('./public', '')}/${row.coverFilename}.webp`,
             ...size(`${process.env.PUBLIC_API_IMAGE_PATH}/${row.coverFilename}.webp`)
           }
         };

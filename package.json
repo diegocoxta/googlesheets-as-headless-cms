@@ -7,7 +7,8 @@
     "create-database": "node ./cli/create-database.js",
     "create-api": "node ./cli/create-api.js",
     "download-images": "node ./cli/download-images.js",
-    "optimize-images": "node ./cli/optimize-images.js"
+    "optimize-images": "node ./cli/optimize-images.js",
+    "static-server": "node ./server.js"
   },
   "author": "Diego Costa <diego@diegocosta.me>",
   "license": "MIT",
