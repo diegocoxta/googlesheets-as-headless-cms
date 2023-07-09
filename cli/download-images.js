@@ -21,10 +21,10 @@ dotenv.config();
   const file = fs.readFileSync(DATABASE_FILE, 'utf-8');
   const fileContent = yaml.parse(file);
 
-  fileContent.map(({ items }) => {
-    console.log(`there are ${items.length} items.`);
+  fileContent.map(({ items, title }) => {
+    console.log(`there are ${items.length} items in '${title}' list.`);
 
-    items.map((item) => {
+    items.map((item, itemIndex) => {
       const images = Object.entries(item).filter(([_key, value]) => isImageUrl(value));
 
       if (images.length === 0) {

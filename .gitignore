@@ -1,3 +1,8 @@
 .env
 node_modules
 .DS_Store
+
+database/data.yml
+database/assets
+public/data.json
+public/assets
